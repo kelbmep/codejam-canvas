@@ -68,4 +68,11 @@ small.addEventListener('click', () => {
 const medium = document.getElementById("medium_picture");
 medium.addEventListener('click', () => {
     draw32x32(codewars32x32);
-})
+});
+
+let img = new Image();
+img.src = "../assets/rolling_scopes.png";
+const big = document.getElementById("big_picture");
+big.addEventListener('click', () => {
+    ctx.drawImage(img, 0, 0, 512, 512);
+});

@@ -70,18 +70,19 @@ h1 {
     width: 230px;
 }
 
-.tools .tools--container {
-    width: 230px;
-    height: 250px;
-    margin-bottom: 92px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
-}
-
 .tools--container {
     width: 230px;
     height: 170px;
-    margin-bottom: 92px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.tools .tools--container {
+    height: 250px;
+    margin-bottom: 92px;
+}
+
+.tools--container:last-child {
+    margin-bottom: 0;
 }
 
 .list--item {
@@ -103,7 +104,7 @@ div.list--icon {
     width: 20px;
     height: 20px;
     border: 1px solid black;
-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .list--color_current {
@@ -131,5 +132,9 @@ border-radius: 50%;
     height: 15px;
     width: 15px;
     margin-right: 40px;
-border: 2px solid black;
+    border: 2px solid black;
+}
+
+#canvas {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
 }
