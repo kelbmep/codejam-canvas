@@ -8,5 +8,84 @@
     <title>Canvas</title>
 </head>
 <body>
+    <header>
+        <div class="header--container">
+            <button class="header--menu">
+                <img src="../assets/menu-icon.png" alt="menu" width="18" height="18">
+            </button>
+            <h1>CodeJam - Pallete</h1>
+            <button class="header--options">
+                <img src="../assets/options-icon.png" alt="options" width="6" height="18">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="main--container">
+            <div class="tools">
+                <div class="tools--container">
+                    <ul class="tools--list">
+                        <li class="list--item">
+                            <img class="list--icon" src="../assets/fill-icon.png" alt="icon">
+                            <span class="list--name">Paint bucket</span>
+                        </li>
+                        <li class="list--item">
+                            <img class="list--icon" src="../assets/eye-drop-icon.png" alt="icon">
+                            <span class="list--name">Choose color</span>
+                        </li>
+                        <hr>
+                        <li class="list--item">
+                            <img class="list--icon" src="../assets/move-icon.png" alt="icon">
+                            <span class="list--name">Move</span>
+                        </li>
+                        <li class="list--item">
+                            <img class="list--icon" src="../assets/transform-icon.png" alt="icon">
+                            <span class="list--name">Transform</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tools--container">
+                    <ul class="tools--list">
+                        <li class="list--item">
+                            <div class="list--icon list--color_current"></div>
+                            <span>Current color</span>
+                        </li>
+                        <li class="list--item">
+                            <div class="list--icon list--color_previous"></div>
+                            <span>Prev color</span>
+                        </li>
+                        <hr>
+                        <li class="list--item">
+                            <div class="list--icon list--red"></div>
+                            <span>red</span>
+                        </li>
+                        <li class="list--item">
+                            <div class="list--icon list--blue"></div>
+                            <span>blue</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section>
+                <canvas id="canvas" width="512" height="512"></canvas> 
+            </section>
+            <div class="tools--container">
+                <ul class="tools--list">
+                    <li id="small_picture" class="list--item">
+                        <span class="list--icon list--square"></span>
+                        <span>4x4</span>
+                    </li>
+                    <li id="medium_picture" class="list--item">
+                        <span class="list--icon list--square"></span>
+                        <span>32x32</span>
+                    </li>
+                    <li id="big_picture" class="list--item">
+                        <span class="list--icon list--square"></span>
+                        <span>512x512</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>
