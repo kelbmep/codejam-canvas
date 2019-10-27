@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;  
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    margin: 8px 0;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    margin-left: 24px;
+    padding-top: 8px;
+    font-size: 17px;
+    color: black;
+}
+
+.header--container {
+    display: flex;
+    max-width: 100%;
+    height: 36px;
+    margin: 0 auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.header--menu {
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+}
+
+.header--options {
+    width: 12px;
+    height: 24px;
+    margin: 8px 16px 0 auto;
+}
+
+.main--container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 30px 0 0;
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+
+.tools--container {
+    width: 230px;
+    height: 170px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
+
+.tools .tools--container {
+    height: 250px;
+    margin-bottom: 92px;
+}
+
+.tools--container:last-child {
+    margin-bottom: 0;
+}
+
+.list--item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.list--item:hover {
+    background-color: lightgray;
+}
+
+.list--icon {
+    margin: 14px 16px;
+}
+
+div.list--icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.list--color_current {
+    background: #c4c4c4;
+}
+
+.list--color_previous {
+    background: #41f795;
+}
+
+.list--red {
+    background: #f74141;
+}
+
+.list--blue {
+    background: #41b6f7;
+}
+
+.list--name {
+    margin: 0 17px;
+}
+
+.list--square {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin-right: 40px;
+    border: 2px solid black;
+}
+
+#canvas {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24), 0 0 4px rgba(0, 0, 0, 0.12);
+}
